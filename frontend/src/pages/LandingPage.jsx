@@ -7,6 +7,7 @@ import Modal from "../components/Modal";
 import { UserContext } from "../context/userContext";
 import { ProfileInfoCard } from "../components/Cards";
 import { landingPageStyles } from "../assets/dummystyle";
+import logo from '../assets/logo.png';
 
 const LandingPage = () => {
   const { user } = useContext(UserContext);
@@ -35,10 +36,15 @@ const LandingPage = () => {
         <div className={landingPageStyles.headerContainer}>
           <div className={landingPageStyles.logoContainer}>
             <div className={landingPageStyles.logoIcon}>
-              <LayoutTemplate className={landingPageStyles.logoIconInner} />
+              {/* <LayoutTemplate className={landingPageStyles.logoIconInner} /> */}
+              <img
+              src={logo}
+              alt="ResumeUp Logo"
+              className="w-15 h-15 object-contain"
+            />
             </div>
             <span className={landingPageStyles.logoText}>
-              ResumeXpert
+              ResumeUp
             </span>
           </div>
 
@@ -148,8 +154,8 @@ const LandingPage = () => {
               {/* Stats */}
               <div className={landingPageStyles.statsContainer}>
                 {[
-                  { value: '50K+', label: 'Resumes Created', gradient: 'from-violet-600 to-fuchsia-600' },
-                  { value: '4.9★', label: 'User Rating', gradient: 'from-orange-500 to-red-500' },
+                  // { value: '50K+', label: 'Resumes Created', gradient: 'from-violet-600 to-fuchsia-600' },
+                  // { value: '4.9★', label: 'User Rating', gradient: 'from-orange-500 to-red-500' },
                   { value: '5 Min', label: 'Build Time', gradient: 'from-emerald-500 to-teal-500' }
                 ].map((stat, idx) => (
                   <div key={idx} className={landingPageStyles.statItem}>
@@ -237,7 +243,7 @@ const LandingPage = () => {
           <div className={landingPageStyles.featuresContainer}>
             <div className={landingPageStyles.featuresHeader}>
               <h2 className={landingPageStyles.featuresTitle}>
-                Why Choose <span className={landingPageStyles.featuresTitleGradient}>ResumeXpert?</span>
+                Why Choose <span className={landingPageStyles.featuresTitleGradient}>ResumeUp?</span>
               </h2>
               <p className={landingPageStyles.featuresDescription}>
                 Everything you need to create a professional resume that stands out
@@ -309,13 +315,23 @@ const LandingPage = () => {
       </main>
 
       {/* Footer */}
-      <footer className={landingPageStyles.footer}>
+      {/* <footer className={landingPageStyles.footer}>
         <div className={landingPageStyles.footerContainer}>
           <p className={landingPageStyles.footerText}>
             Crafted with <span className={landingPageStyles.footerHeart}>❤️</span> by{' '}
             <a href="https://hexagondigitalservices.com" target="_blank" className={landingPageStyles.footerLink}>
               Hexagon Digital Services
             </a>
+          </p>
+        </div>
+      </footer> */}
+      <footer className={landingPageStyles.footer}>
+        <div className={landingPageStyles.footerContainer}>
+          <p className={landingPageStyles.footerText}>
+            Elevate your career, one resume at a time.
+          </p>
+          <p className={landingPageStyles.footerCopyright}>
+            © {new Date().getFullYear()} ResumeUp. All rights reserved.
           </p>
         </div>
       </footer>
