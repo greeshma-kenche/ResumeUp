@@ -205,7 +205,7 @@ const LandingPage = () => {
                   <rect x="70" y="340" width="200" height="4" rx="2" className={landingPageStyles.svgRectLight} />
 
                   {/* Animated elements */}
-                  <circle cx="320" cy="100" r="15" className={landingPageStyles.svgAnimatedCircle}>
+                  {/* <circle cx="320" cy="100" r="15" className={landingPageStyles.svgAnimatedCircle}>
                     <animateTransform
                       attributeName="transform"
                       type="translate"
@@ -231,7 +231,7 @@ const LandingPage = () => {
                       dur="4s"
                       repeatCount="indefinite"
                     />
-                  </polygon>
+                  </polygon> */}
                 </svg>
               </div>
             </div>

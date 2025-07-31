@@ -5,10 +5,14 @@ export const landingPageStyles = {
   // Header styles
   header: "fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-violet-100/50",
   headerContainer: "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center",
+  // logoContainer: "flex items-center gap-3",
+  // logoIcon: "w-10 h-10 bg-gradient-to-br from-violet-600 to-fuchsia-600 rounded-2xl flex items-center justify-center shadow-lg shadow-violet-200",
+  // logoIconInner: "w-5 h-5 text-white",
+  // logoText: "text-xl sm:text-2xl font-black bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent",
   logoContainer: "flex items-center gap-3",
-  logoIcon: "w-10 h-10 bg-gradient-to-br from-violet-600 to-fuchsia-600 rounded-2xl flex items-center justify-center shadow-lg shadow-violet-200",
+  logoIcon: "w-10 h-10 bg-gradient-to-br from-teal-500 to-blue-900 rounded-2xl flex items-center justify-center shadow-lg shadow-teal-200",
   logoIconInner: "w-5 h-5 text-white",
-  logoText: "text-xl sm:text-2xl font-black bg-gradient-to-r from-violet-600 to-fuchsia-600 bg-clip-text text-transparent",
+  logoText: "text-xl sm:text-2xl font-black bg-gradient-to-r from-teal-500 to-blue-900 bg-clip-text text-transparent",
   mobileMenuButton: "md:hidden p-2 rounded-xl hover:bg-violet-50 transition-colors",
   mobileMenuIcon: "text-violet-600",
 
@@ -166,7 +170,7 @@ export const dashboardStyles = {
 export const cardStyles = {
   // ProfileInfoCard styles
   // profileCard: "flex items-center gap-3 p-2 sm:p-3 bg-white backdrop-blur-xl border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.03]",
-  profileCard: "flex items-center gap-3 p-2 sm:p-3 bg-transparent hover:shadow-lg transition-all duration-300 hover:scale-[1.03]",
+  profileCard: "flex items-center gap-3 p-2 sm:p-3 bg-transparent",
   profileInitialsContainer: "w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-2xl flex items-center justify-center shadow-md",
   profileInitialsText: "text-base sm:text-lg font-black text-white",
   profileName: "text-xs sm:text-sm font-bold text-gray-800",

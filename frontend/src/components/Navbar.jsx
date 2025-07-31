@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto  flex items-center justify-between gap-5">
 
         <Link to="/" className="flex items-center gap-3">
-          <div className="flex items-center pb-6 gap-3">
+          <div className="flex items-center pb-3 gap-3">
 
             <div className="w-10 h-10 bg-gradient-to-br from-violet-600 to-fuchsia-600 rounded-2xl flex 
             items-center justify-center shadow-lg shadow-violet-200">
