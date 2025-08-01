@@ -192,7 +192,7 @@ const Dashboard = () => {
         {!loading && allResumes.length === 0 && (
           <div className={styles.emptyStateWrapper}>
             <div className={styles.emptyIconWrapper}>
-              <LuFilePlus size={32} className="text-violet-600" />
+              <LuFilePlus size={32} className="text-teal-600" />
             </div>
             <h3 className={styles.emptyTitle}>No Resumes Yet</h3>
             <p className={styles.emptyText}>

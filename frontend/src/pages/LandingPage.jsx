@@ -178,12 +178,12 @@ const LandingPage = () => {
                   {/* Background */}
                   <defs>
                     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#8b5cf6" />
-                      <stop offset="100%" stopColor="#d946ef" />
+                      <stop offset="0%" stopColor="#14b8a6" />
+                      <stop offset="100%" stopColor="#244296ff" />
                     </linearGradient>
                     <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                       <stop offset="0%" stopColor="#ffffff" />
-                      <stop offset="100%" stopColor="#f8fafc" />
+                      <stop offset="100%" stopColor="#f0f9ff" />
                     </linearGradient>
                   </defs>
 
@@ -256,23 +256,23 @@ const LandingPage = () => {
                   icon: <Zap className={landingPageStyles.featureIcon} />,
                   title: "Lightning Fast",
                   description: "Create professional resumes in under 5 minutes with our streamlined process",
-                  gradient: landingPageStyles.featureIconViolet,
-                  bg: landingPageStyles.featureCardViolet
+                  gradient: "bg-teal-500", 
+                  bg: "bg-teal-50"         
                 },
                 {
                   icon: <LayoutTemplate className={landingPageStyles.featureIcon} />,
                   title: "Pro Templates",
                   description: "Choose from dozens of recruiter-approved, industry-specific templates",
-                  gradient: landingPageStyles.featureIconFuchsia,
-                  bg: landingPageStyles.featureCardFuchsia
+                  gradient: "bg-cyan-600",          
+                  bg: "bg-blue-50"
                 },
                 {
                   icon: <Download className={landingPageStyles.featureIcon} />,
                   title: "Instant Export",
                   description: "Download high-quality PDFs instantly with perfect formatting",
-                  gradient: landingPageStyles.featureIconOrange,
-                  bg: landingPageStyles.featureCardOrange
-                }
+                  gradient: "bg-blue-900",          
+                  bg: "bg-cyan-50"
+                },
               ].map((feature, index) => (
                 <div key={index} className={landingPageStyles.featureCard}>
                   <div className={landingPageStyles.featureCardHover}></div>
