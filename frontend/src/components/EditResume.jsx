@@ -695,7 +695,7 @@ const EditResume = () => {
               onClick={() => setOpenThemeSelector(true)}
             >
               <Palette size={16} />
-              <span className="text-sm">Theme</span>
+              <span className="text-sm">Templates</span>
             </button>
 
             <button
@@ -781,7 +781,7 @@ const EditResume = () => {
         </div>
       </div>
 
-      <Modal isOpen={openThemeSelector} onClose={() => setOpenThemeSelector(false)} title="Change Theme">
+      <Modal isOpen={openThemeSelector} onClose={() => setOpenThemeSelector(false)} title="Change Template">
         <div className={containerStyles.modalContent}>
           <ThemeSelector
             selectedTheme={resumeData?.template?.theme}

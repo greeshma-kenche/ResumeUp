@@ -33,6 +33,7 @@ export const registerUser = async (req, res) => {
             email,
             password: hashedPassword,
         });
+        console.log("User created:", user);
 
         // Return user data with JWT
         res.status(201).json({

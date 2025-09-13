@@ -7,6 +7,7 @@ import Modal from "../components/Modal";
 import { UserContext } from "../context/userContext";
 import { ProfileInfoCard } from "../components/Cards";
 import { landingPageStyles } from "../assets/dummystyle";
+import logo from '../assets/logo.png';
 
 const LandingPage = () => {
   const { user } = useContext(UserContext);
@@ -35,10 +36,15 @@ const LandingPage = () => {
         <div className={landingPageStyles.headerContainer}>
           <div className={landingPageStyles.logoContainer}>
             <div className={landingPageStyles.logoIcon}>
-              <LayoutTemplate className={landingPageStyles.logoIconInner} />
+              {/* <LayoutTemplate className={landingPageStyles.logoIconInner} /> */}
+              <img
+              src={logo}
+              alt="ResumeUp Logo"
+              className="w-15 h-15 object-contain"
+            />
             </div>
             <span className={landingPageStyles.logoText}>
-              ResumeXpert
+              ResumeUp
             </span>
           </div>
 
@@ -148,8 +154,8 @@ const LandingPage = () => {
               {/* Stats */}
               <div className={landingPageStyles.statsContainer}>
                 {[
-                  { value: '50K+', label: 'Resumes Created', gradient: 'from-violet-600 to-fuchsia-600' },
-                  { value: '4.9★', label: 'User Rating', gradient: 'from-orange-500 to-red-500' },
+                  // { value: '50K+', label: 'Resumes Created', gradient: 'from-violet-600 to-fuchsia-600' },
+                  // { value: '4.9★', label: 'User Rating', gradient: 'from-orange-500 to-red-500' },
                   { value: '5 Min', label: 'Build Time', gradient: 'from-emerald-500 to-teal-500' }
                 ].map((stat, idx) => (
                   <div key={idx} className={landingPageStyles.statItem}>
@@ -172,12 +178,12 @@ const LandingPage = () => {
                   {/* Background */}
                   <defs>
                     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#8b5cf6" />
-                      <stop offset="100%" stopColor="#d946ef" />
+                      <stop offset="0%" stopColor="#14b8a6" />
+                      <stop offset="100%" stopColor="#244296ff" />
                     </linearGradient>
                     <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                       <stop offset="0%" stopColor="#ffffff" />
-                      <stop offset="100%" stopColor="#f8fafc" />
+                      <stop offset="100%" stopColor="#f0f9ff" />
                     </linearGradient>
                   </defs>
 
@@ -199,7 +205,7 @@ const LandingPage = () => {
                   <rect x="70" y="340" width="200" height="4" rx="2" className={landingPageStyles.svgRectLight} />
 
                   {/* Animated elements */}
-                  <circle cx="320" cy="100" r="15" className={landingPageStyles.svgAnimatedCircle}>
+                  {/* <circle cx="320" cy="100" r="15" className={landingPageStyles.svgAnimatedCircle}>
                     <animateTransform
                       attributeName="transform"
                       type="translate"
@@ -225,7 +231,7 @@ const LandingPage = () => {
                       dur="4s"
                       repeatCount="indefinite"
                     />
-                  </polygon>
+                  </polygon> */}
                 </svg>
               </div>
             </div>
@@ -237,7 +243,7 @@ const LandingPage = () => {
           <div className={landingPageStyles.featuresContainer}>
             <div className={landingPageStyles.featuresHeader}>
               <h2 className={landingPageStyles.featuresTitle}>
-                Why Choose <span className={landingPageStyles.featuresTitleGradient}>ResumeXpert?</span>
+                Why Choose <span className={landingPageStyles.featuresTitleGradient}>ResumeUp?</span>
               </h2>
               <p className={landingPageStyles.featuresDescription}>
                 Everything you need to create a professional resume that stands out
@@ -250,23 +256,23 @@ const LandingPage = () => {
                   icon: <Zap className={landingPageStyles.featureIcon} />,
                   title: "Lightning Fast",
                   description: "Create professional resumes in under 5 minutes with our streamlined process",
-                  gradient: landingPageStyles.featureIconViolet,
-                  bg: landingPageStyles.featureCardViolet
+                  gradient: "bg-teal-500", 
+                  bg: "bg-teal-50"         
                 },
                 {
                   icon: <LayoutTemplate className={landingPageStyles.featureIcon} />,
                   title: "Pro Templates",
                   description: "Choose from dozens of recruiter-approved, industry-specific templates",
-                  gradient: landingPageStyles.featureIconFuchsia,
-                  bg: landingPageStyles.featureCardFuchsia
+                  gradient: "bg-cyan-600",          
+                  bg: "bg-blue-50"
                 },
                 {
                   icon: <Download className={landingPageStyles.featureIcon} />,
                   title: "Instant Export",
                   description: "Download high-quality PDFs instantly with perfect formatting",
-                  gradient: landingPageStyles.featureIconOrange,
-                  bg: landingPageStyles.featureCardOrange
-                }
+                  gradient: "bg-blue-900",          
+                  bg: "bg-cyan-50"
+                },
               ].map((feature, index) => (
                 <div key={index} className={landingPageStyles.featureCard}>
                   <div className={landingPageStyles.featureCardHover}></div>
@@ -309,13 +315,23 @@ const LandingPage = () => {
       </main>
 
       {/* Footer */}
-      <footer className={landingPageStyles.footer}>
+      {/* <footer className={landingPageStyles.footer}>
         <div className={landingPageStyles.footerContainer}>
           <p className={landingPageStyles.footerText}>
             Crafted with <span className={landingPageStyles.footerHeart}>❤️</span> by{' '}
             <a href="https://hexagondigitalservices.com" target="_blank" className={landingPageStyles.footerLink}>
               Hexagon Digital Services
             </a>
+          </p>
+        </div>
+      </footer> */}
+      <footer className={landingPageStyles.footer}>
+        <div className={landingPageStyles.footerContainer}>
+          <p className={landingPageStyles.footerText}>
+            Elevate your career, one resume at a time.
+          </p>
+          <p className={landingPageStyles.footerCopyright}>
+            © {new Date().getFullYear()} ResumeUp. All rights reserved.
           </p>
         </div>
       </footer>

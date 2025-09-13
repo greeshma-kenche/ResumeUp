@@ -9,11 +9,11 @@ const StepProgress = ({ progress }) => {
       <style>{shimmerStyle}</style>
       <div className="relative w-full h-4 bg-white/5 backdrop-blur-2xl overflow-hidden rounded-full border border-white/10">
         {/* Animated background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20 animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-teal-500/20 to-blue-500/20 animate-pulse"></div>
 
         {/* Main progress bar with flowing animation */}
         <div
-          className="relative h-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-violet-600 animate-flow bg-[length:200%_100%] transition-all duration-700 ease-out rounded-full overflow-hidden animate-pulse-glow"
+          className="relative h-full bg-gradient-to-r from-teal-500 via-blue-700 to-teal-600 animate-flow bg-[length:200%_100%] transition-all duration-700 ease-out rounded-full overflow-hidden animate-pulse-glow"
           style={{ width: `${progress}%` }}
         >
           {/* Flowing liquid effect */}
